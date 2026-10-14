@@ -1,0 +1,191 @@
+/*Existen dos tipos de selectores
+globales: que se aplica a rodo el documento
+etiqueta: se aplica a la etiqueta correspondiente
+clase: se aplica al componente indicado que se invoca mediante su nombre, se usa las veces necesarias y el simbolo que se utiliza es el .
+id: se aplica al componente indicado que se invoca mediante su nombre, se utiliza una sola vez y su simbolo es el #*/
+/*------------------------------
+    selector global
+------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000208;
+    background: #fdd7ff;
+}
+
+/*Aplicamos estilos al contenedor main*/
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/*Estilos para header*/
+header {
+    margin-bottom: 24px;
+}
+
+/*Estilos h1*/
+h1 {
+    margin: 0 0 8px;
+    font-size: clamp(24px, 4vm, 38px);
+    color: #a2039f;
+}
+header p {
+    margin: 0;
+    color: #2509a4;
+    line-height: 1.5;
+}
+
+/*Permite consultar todas las columnas en pantallas pequeñas*/
+.tabla-contendor {
+    overflow-x: auto;
+    background: #eb42da;
+    border: 1px solid rgb(6, 1, 1);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(73, 6, 74, 0.2);
+}
+
+/*Invocamos un pseudoclase*/
+.tabla-contendor:focus-visible {
+    outline: 3px solid #c877c0;
+    outline-offset: 4px;
+}
+
+/*Creamos estilos a la etiqueta table*/
+table {
+    width: 100%;
+    min-width: 1100px;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+caption {
+    padding: 18px 20px;
+    text-align: left;
+    font-weight: 700;
+    color: rgb(16, 7, 182);
+    background: #fdd7ff;
+}
+
+/*Estilos a la cadera de la tabla*/
+thead th {
+    padding: 16px 12px;
+    color: rgb(0, 1, 72);
+    background: #B030A4;
+    border: 1px solid rgba(189, 96, 167, 0.6);
+    text-align: center;
+    line-height: 1.4;
+}
+
+thead tr:nth-child(2) th {
+    background: #dbabff;
+} 
+
+tbody td,
+tbody th {
+    padding: 16px 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(229, 101, 255, 0.6);
+}
+
+tbody tr:hover {
+    background: #B030A4;
+}
+
+tbody tr:last-child td,
+tbody tr:last-child th {
+    border-bottom: none;
+}
+
+.categoria {
+    width: 160px;
+    background: rgba(178, 85, 240, 0.6);
+    color: #000000;
+    font-weight: 700;
+}
+
+.categoria small {
+    display: block;
+    margin-top: 6px;
+    color: rgb(50, 0, 95);
+    font-weight: 400;
+}
+
+.producto {
+    font-weight: 700;
+}
+
+.descripcion {
+    min-width: 190px;
+    max-width: 260px;
+    color: #990097;
+}
+
+.numero {
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+}
+
+.dinero {
+    text-align: right;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+
+.total-ventas {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+.imagen-producto {
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    padding: 4px;
+    object-fit: contain;
+    background: #f7c4f1;
+    border: 1px solid rgba(26, 177, 61, 0.6);
+    border-radius: 10px;
+}
+
+/*------------------------------
+       Selector tipo clase           
+------------------------------*/
+.container {
+    color: rgb(135, 36, 137);
+    text-align: right;
+}
+
+.nota {
+    margin: 12px 0 24px;
+    font-size: 13px;
+    color: #000000;
+}
+
+.enlace-home {
+    display: inline-block;
+    padding: 12px 18px;
+    color: rgba(61, 41, 119, 0.6);
+    background: #dc3ef5;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+}
+/*------------------------------
+       Selector id          
+------------------------------*/
+#imagen{
+    width: 100%;
+}

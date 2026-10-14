@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>HOLA WWW</title>
+    <!--Insertando Estilos css
+    <style>
+        body{
+            background-color: #EE00FF;
+        } 
+        h1 {
+            background-color: blue;
+            text-align: center;
+            
+        }
+        a {
+            background-color: #00FBFF;
+        }
+    </style>-->
+    <!--Insertando estilos css archivo fuera de html-->
+    <link rel="stylesheet" href="estilos/style.css">
+
 </head>
 <body>
     <!--Aquí va el título de la página web-->
@@ -18,7 +35,7 @@
     <!--Contenedores
     Son espacios movibles donde se crea contenido html
     section, div, article-->
-    <section>
+    <section class="container">
         <!--Un enlace a youtube
         Utilizamos la etiqueta a-ancle
         Rutas absolutas: Es cuando queremos enlazarnos a recursos externos de mi proyecto
@@ -27,10 +44,10 @@
         <!--Etiqueta para salto de linea-->
         <br>
         <!--Enlace a una imagen mediante ruta relativa-->
-        <img src="img/que-es-html5.jpg" alt="Logo de HTML5" width="100px" heigth="100px">
+        <img id="imagen" src="img/que-es-html5.jpg" alt="Logo de HTML5" width="100px" heigth="100px">
         <!--Salto de linea->
         <br>
-        <!--Escribir yun parrafo-->
+        <!-Escribir yun parrafo-->
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vero expedita totam. Voluptas optio harum cumque tempora exercitationem unde alias nulla aperiam dicta, molestias officia perferendis facere, maiores fugiat doloremque.
             Quibusdam perspiciatis cumque iste dolores, blanditiis aspernatur! Distinctio, vero. Aliquam sapiente, ipsa quo delectus impedit unde sit sint eius? Ducimus libero quia officia distinctio eaque eius quo voluptate nihil laudantium!
@@ -56,6 +73,97 @@
             <li>Toyota</li>
         </ul>
     </div>
+    <!--Creamos una tabla-->
+    <section>
+        <div>
+            <table border="1px"> 
+                <tr0>
+                    <th>Paises</th>
+                    <th>Población</th>
+                    <th>Continente</th>
+                </tr>
+                <tr>
+                    <td colspan="2">Ecuador</td>
+                    <td rowspan="2">18000000</td>
+                    <td>América</td>
+                </tr>
+                <tr>
+                    <td">Colombia</td>
+                    <td>25467577</td>
+                    <td>América</td>
 
+                </tr>
+                <tfoot>
+                    <th>Paises</th>
+                    <th>Población</th>
+                    <th>Continente</th>
+                </tfoot>
+            </table>
+            <br>
+            <table border="1px">
+                <tr>
+                    <th>Orden</th>
+                    <th>Programa</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                <td>JavaScript</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>TypeScrip</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>HTML y CSS</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>SQL</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Python</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                <td>Java</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>C#</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>C++</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Bash</td>
+                </tr>
+
+                
+
+
+            </table>
+        </div>
+    </section>
+    <!--Enlace de la Tbal Ventas-->
+    <div>
+        <a href="TABLA/tabla.html">Ir a Tabla de Ventas</a>
+    </div>
+    <div>
+        <a href="img/formulario.html">Ir a Formulario</a>
+    </div>
+    <div>
+        <a href="TABLA/tabla1.html">Ingrese tabla 2</a>
+    </div>
+    <div>
+        <a href="index.html" class="enlace-home">Inicio</a>
+    </div>
 </body>    
 </html>
